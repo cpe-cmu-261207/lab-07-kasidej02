@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 a {
@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.header{
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  background-color: #F0DD3F ;
+}
+
+.header-txt{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'GPAcalculator.css';
+@import 'posts.css';
+@import 'portfolio.css';
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

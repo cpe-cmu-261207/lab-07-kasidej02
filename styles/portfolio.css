@@ -1,0 +1,47 @@
+.grid-profile{
+    grid-template-columns: 8ch auto;
+}
+
+.jumbotron{
+    background-image: url('https://64.media.tumblr.com/34d8aa2ee8b4690c0fc77c48f26d86c3/tumblr_nt5foft7HJ1uxyv31o2_1280.png');
+    padding: 1rem;
+}
+
+.inner-jumbotron{
+    
+}
+
+.port-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.card{
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 60%;
+    padding-top: 1rem;
+    transition: 0.3s;
+}
+
+.card:hover{
+    width: 65%;
+    background-color: #FDF8C0;
+}
+
+/*-----------gallery--------*/
+.figure{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.figure:hover{
+    opacity: 1;
+}
