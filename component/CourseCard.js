@@ -7,11 +7,13 @@ const CourseCard = (props) => {
 
   return (
     <>
-    <div className={"statementElement statementElement-" + props.semister} onClick={() => onDeleteCourse(props.course_id)}>
+    <div className="align-course">
+    <div className="btn10" onClick={() => onDeleteCourse(props.course_id)}>
       <span className="statement-id">{props.course_id}</span>
       <aside>GRADE: {props.grade_txt}</aside>
       <aside>CREDIT: {props.credit}</aside>
     </div>
+  </div>
     </>
   );
 };

@@ -46,38 +46,102 @@
   overflow: auto;
 }
 
+.align-course{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  
+}
+
 /* ----------------------- CourseCard ------------------------- */
 
-.statementElement{
-  width: 150px;
-  height: 150px;
-  font-size: 18px;
+
+.btn10{
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  padding: 0.5rem;
+  
+  top: 40px;
   font-family: 'Kanit', sans-serif;
-  border-radius: 20%;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-.statementElement span{
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.statementElement:hover{
-  border: 2px solid #ffff;
+  font-size: 12px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: #fff;
   cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius:50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent!important;
+  z-index:10;
+  
 }
 
-.statementElement-1{
-  color: white;
-  background-color: #ff9fa0;
-}
 
-.statementElement-2{
-  color: black; 
-  background-color: #923c3d;
+.btn10:hover{
+  border: 1px solid #F0DD3E;
+  color: black!important;
+}
+.btn10::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #F0DD3E;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+} 
+
+.btn10::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #9556FF;
+  position: absolute;
+-ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);   
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+opacity:1;
+width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+opacity:1;
+width: 120%;
 }
 
 /* ----------------- CourseForm ------------------ */
@@ -123,6 +187,10 @@
   padding: 0.5rem;
   padding-right: 0.5rem;
   justify-content: center;
+}
+
+.form-control{
+  margin: 0 auto;
 }
 
 
@@ -173,19 +241,6 @@
 .select{
   margin-left: 0.5rem;
 }
-
-/*.button {
-  &.alternative {
-      --color-hover: #2B3044;
-      --background: #362A89;
-      --hover-back: #6D58FF;
-      --hover-front: #F6F8FF;
-  }
-  &.simple {
-      --background: #275EFE;
-      --background-hover: #1749DB;
-  }
-}*/
 
  /*---------------------------animation ------------------------*/
  

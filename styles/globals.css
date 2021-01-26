@@ -29,6 +29,27 @@ a {
   color: white;
 }
 
+.structure{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 10%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  
+}
+
+.Khunoplanet{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'GPAcalculator.css';
 @import 'posts.css';
